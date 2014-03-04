@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# filename: pre-commit
+# save this file in .git/hooks as pre-commit
+
+# source rvm and .rvmrc if present
+[ -s "$HOME/.rvm/scripts/rvm" ] && . "$HOME/.rvm/scripts/rvm"
+[ -s "$PWD/.rvmrc" ] && . "$PWD/.rvmrc"
+
+# create a file to flag for precompile assets before push
+if git diff-index --name-only HEAD | egrep '^app/assets' >/dev/null ; then
+  touch tmp/precompile-assets.txt
+fi

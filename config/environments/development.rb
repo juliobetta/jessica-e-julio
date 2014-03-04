@@ -6,6 +6,13 @@ Jessicaejulio::Application.configure do
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
 
+  # Raise exception on mass assignment protection for Active Record models
+  config.active_record.mass_assignment_sanitizer = :strict
+
+  # Log the query plan for queries taking more than this (works
+  # with SQLite, MySQL, and PostgreSQL)
+  config.active_record.auto_explain_threshold_in_seconds = 0.5
+
   # Log error messages when you accidentally call methods on nil.
   config.whiny_nils = true
 
@@ -25,6 +32,19 @@ Jessicaejulio::Application.configure do
   # Do not compress assets
   config.assets.compress = false
 
+  config.assets.prefix = '/assets_dev'
+
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # Expands the lines which load the assets
+  config.assets.debug = true
+
+  # ActionMailer Config
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  # A dummy setup for development - no deliveries, but logged
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = false
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default :charset => "utf-8"
 end

@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# enable git pre/post push hook
+# save this file in /usr/bin or ~/.rvm/bin
+# filename: git-push-wh
+
+
+GIT_DIR_="$(git rev-parse --git-dir)"
+BRANCH="$(git rev-parse --symbolic --abbrev-ref $(git symbolic-ref HEAD))"
+
+PRE_PUSH="$GIT_DIR_/hooks/pre-push"
+POST_PUSH="$GIT_DIR_/hooks/post-push"
+
+test -x "$PRE_PUSH" &&
+        echo "$PRE_PUSH" "$BRANCH" "$@" | sh
+
+git push "$@"
+
+test $? -eq 0 && test -x "$POST_PUSH" && 
+        echo "$POST_PUSH" "$BRANCH" "$@" | sh

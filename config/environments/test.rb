@@ -1,11 +1,20 @@
-Jessicaejulio::Application.configure do
+Testfy::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
+
+  # 3.2 UPGRADE ==========================================================
+  # ======================================================================
+
+  # Allow pass debug_assets=true as a query parameter to load pages with unpackaged assets
+  config.assets.allow_debugging = true
+
+  # ======================================================================
+  # ======================================================================
 
   # The test environment is used exclusively to run your application's
   # test suite.  You never need to work with it otherwise.  Remember that
   # your test database is "scratch space" for the test suite and is wiped
   # and recreated between test runs.  Don't rely on the data there!
-  config.cache_classes = true
+  config.cache_classes = false
 
   # Configure static asset server for tests with Cache-Control for performance
   config.serve_static_assets = true
@@ -36,4 +45,17 @@ Jessicaejulio::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+
+  # Do not compress assets
+  config.assets.compress = false
+
+  config.assets.prefix = '/assets_test'
+
+  # Expands the lines which load the assets
+  config.assets.debug = true
+
+  # i18n
+  config.i18n.available_locales = ['pt-BR', :es, 'en-US']
+
+  config.action_mailer.default_url_options = { :host => '0.0.0.0:3000' }
 end

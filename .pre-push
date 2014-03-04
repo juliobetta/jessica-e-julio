@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# filename: pre-push
+# save this file in .git/hooks as pre-push
+
+FILE='tmp/precompile-assets.txt'
+
+# source rvm and .rvmrc if present
+[ -s "$HOME/.rvm/scripts/rvm" ] && . "$HOME/.rvm/scripts/rvm"
+[ -s "$PWD/.rvmrc" ] && . "$PWD/.rvmrc"
+
+# precompile assets if any have been updated
+if [ -f $FILE ]; then
+  echo 'Precompiling assets...'
+  #rake assets:clean
+  bundle exec rake assets:precompile RAILS_ENV=production
+  # Remove file
+  echo "rm $FILE" | sh
+fi

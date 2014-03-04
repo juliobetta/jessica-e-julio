@@ -1,0 +1,44 @@
+pt-BR:
+  simple_form:
+    "yes": 'Sim'
+    "no": 'Não'
+    required:
+      text: 'Requerido'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: "Alguns erros foram encontrados. Dê uma olhada:"
+    # Labels and hints examples
+    # labels:
+    #   password: 'Password'
+    #   user:
+    #     new:
+    #       email: 'E-mail para efetuar o sign in.'
+    #     edit:
+    #       email: 'E-mail.'
+    labels:
+      usuario:
+        edit:
+          password: 'Nova Senha'
+      arquivo:
+        edit:
+          data: 'Novo Arquivo'
+    hints:
+      teste:
+        expira_dentro_de: 'Tempo máximo no qual o candidato terá para <br> terminar o teste, a partir do momento que for iniciado.'
+        pontuacao_minima: 'Pontuação mínima para aprovação do candidato. <br>(de 1 a 100, somente números inteiros)'
+      usuario:
+        nome: 'Sua identificação no sistema.'
+        username: "Deve conter entre 5 a 40 caracteres. <br>Serão aceitos somente letras, números, underscores e hífens."
+        email: 'Será utilizado para receber notificações. <br> <b>Atenção!</b> Não poderá ser modificado.'
+        new:
+          password: 'No mínimo 6 caracteres.'
+        edit:
+          password: 'Deixe em branco caso não queira mudar.'
+      arquivo:
+        data: 'Formatos permitidos: jpeg, gif, png, pdf, odt, doc, docx, txt'
+        edit:
+          data: 'Deixe em branco caso não queira mudar. <br> Formatos permitidos: jpeg, gif, png, pdf, odt, doc, docx, txt'
+
