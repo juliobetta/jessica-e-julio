@@ -33,7 +33,7 @@ gem 'mysql2'
 gem 'simple_form'
 gem 'nested_form'
 gem 'rails_admin', :git => 'https://github.com/sferik/rails_admin.git', :branch => 'rails-3.x'
-gem 'paperclip'
+gem 'paperclip', '4.1.1'
 gem 'aws-sdk'
 gem 'squeel'
 
