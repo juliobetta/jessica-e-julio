@@ -1,5 +1,25 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+# encoding: UTF-8
+pt-BR:
+  activerecord:
+    models:
+      user: Usuário
+      guest: Convidado
+      photo: Foto
+    attributes:
+      guest:
+        possible_aggregates: Possível número de agregados
+        confirmed_aggregates: Número de agregados confirmados
+        name: Nome
+        email: Email
+        status: Status
+        code: Código
+      photo:
+        data: Foto
+        description: Descrição
+      user:
+        name: Nome
+        email: Email
+        last_sign_in_at: Último login
+        password: Senha
+        password_confirmation: Confirmação da senha
 
-en:
-  hello: "Hello world"

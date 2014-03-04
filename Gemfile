@@ -26,6 +26,7 @@ end
 gem 'twitter-bootstrap-rails', '~> 2.2.0'
 gem 'jquery-rails'
 
+gem 'rails-i18n'
 gem 'devise'
 gem 'haml-rails'
 gem 'mysql2'

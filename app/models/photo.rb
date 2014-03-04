@@ -5,12 +5,14 @@ class Photo < ActiveRecord::Base
 
   has_attached_file :data
 
+  validates_attachment_content_type :data, :content_type => %w(image/jpeg image/jpg image/png)
+
   validates :direct_upload_url, presence: true, format: { with: DIRECT_UPLOAD_URL_FORMAT }
 
   before_create :set_upload_attributes
   after_create :queue_processing
 
-  attr_accessible :direct_upload_url, :description
+  attr_accessible :direct_upload_url, :description, :data
 
   # Store an unescaped version of the escaped URL that Amazon returns from direct upload.
   def direct_upload_url=(escaped_url)
