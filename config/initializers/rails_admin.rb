@@ -90,7 +90,9 @@ RailsAdmin.config do |config|
         field :email
         field :possible_aggregates
         field :confirmed_aggregates
-        field :status
+        field :status, :enum
+        field :created_at
+        field :updated_at
         # filters [:id, :name]  # Array of field names which filters should be shown by default in the table header
         # items_per_page 100    # Override default_items_per_page
         # sort_by :id           # Sort column (default is primary key)
@@ -102,7 +104,7 @@ RailsAdmin.config do |config|
         field :name
         field :email
         field :possible_aggregates
-        field :status
+        field :status, :enum
         field :code
 
       end

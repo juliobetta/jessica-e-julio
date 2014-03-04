@@ -13,6 +13,11 @@ pt-BR:
         email: Email
         status: Status
         code: Código
+        confirmed: SIM
+        not_confirmed: Não-confirmado
+        unconfirmed: NÃO
+        updated_at: Última modificação
+        created_at: Data do cadastro
       photo:
         data: Foto
         description: Descrição
