@@ -301,6 +301,7 @@ DEPENDENCIES
   devise
   email_spec
   factory_girl_rails
+  fog
   haml-rails
   html2haml
   hub
