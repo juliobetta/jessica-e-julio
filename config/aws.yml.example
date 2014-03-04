@@ -1,14 +1,12 @@
 # config/aws.yml
 defaults: &defaults
-  access_key_id: "devkey"
-  secret_access_key: "devsecret"
+  provider: 'AWS'
+  aws_access_key_id: ""
+  aws_secret_access_key: ""
+  region: 'sa-east-1'
 development:
   <<: *defaults
-  bucket: "myapp-development"
 test:
   <<: *defaults
-  bucket: "myapp-test"
 production:
-  access_key_id: <%=ENV["AWS_ACCESS_KEY_ID"]%>
-  secret_access_key: <%=ENV["AWS_SECRET_ACCESS_KEY"]%>
-  bucket: "myapp"
+  <<: *defaults

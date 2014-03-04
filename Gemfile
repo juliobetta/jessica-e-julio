@@ -35,7 +35,6 @@ gem 'nested_form'
 gem 'rails_admin', :git => 'https://github.com/sferik/rails_admin.git', :branch => 'rails-3.x'
 gem 'paperclip'
 gem 'aws-sdk'
-gem 's3_direct_upload'
 gem 'squeel'
 
 group :test do
