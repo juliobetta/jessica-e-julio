@@ -6,5 +6,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require s3_direct_upload
 //= require twitter/bootstrap
 //= require_tree .
