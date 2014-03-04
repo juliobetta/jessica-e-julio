@@ -87,3 +87,4 @@ asset_sync.rb
 setup_mail.rb
 database.yml
 aws.yml
+public/assets/
