@@ -309,7 +309,7 @@ DEPENDENCIES
   mysql2
   nested_form
   newrelic_rpm
-  paperclip
+  paperclip (= 4.1.1)
   quiet_assets
   rails (= 3.2.15)
   rails-i18n
