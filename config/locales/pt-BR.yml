@@ -16,6 +16,7 @@ pt-BR:
       photo:
         data: Foto
         description: Descrição
+        created_at: Data do upload
       user:
         name: Nome
         email: Email

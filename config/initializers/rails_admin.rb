@@ -81,7 +81,7 @@ RailsAdmin.config do |config|
       # label_plural 'Convidados'      # Same, plural
       # weight 0                      # Navigation priority. Bigger is higher.
       # parent OtherModel             # Set parent model for navigation. MyModel will be nested below. OtherModel will be on first position of the dropdown
-      # navigation_label              # Sets dropdown entry's name in navigation. Only for parents!
+      # navigation_label            # Sets dropdown entry's name in navigation. Only for parents!
 
     # Section specific configuration:
 
@@ -135,8 +135,6 @@ RailsAdmin.config do |config|
       configure :data, :paperclip
       configure :created_at, :datetime
       configure :updated_at, :datetime
-      configure :direct_upload_url, :string
-      configure :processed, :boolean
 
     # Cross-section configuration:
 
@@ -145,12 +143,13 @@ RailsAdmin.config do |config|
       # label_plural 'Fotos'      # Same, plural
       # weight 0                      # Navigation priority. Bigger is higher.
       # parent OtherModel             # Set parent model for navigation. MyModel will be nested below. OtherModel will be on first position of the dropdown
-      # navigation_label              # Sets dropdown entry's name in navigation. Only for parents!
+      # navigation_label             # Sets dropdown entry's name in navigation. Only for parents!
 
     # Section specific configuration:
 
       list do
         field :id
+        field :data
         field :description
         field :created_at
         # filters [:id, :name]  # Array of field names which filters should be shown by default in the table header
@@ -158,7 +157,12 @@ RailsAdmin.config do |config|
         # sort_by :id           # Sort column (default is primary key)
         # sort_reverse true     # Sort direction (default is true for primary key, last created first)
       end
-      show do; end
+
+      show do
+        field :data
+        field :description
+        field :created_at
+      end
 
       edit do
         field :data
@@ -207,7 +211,7 @@ RailsAdmin.config do |config|
       # label_plural 'Usuários'      # Same, plural
       # weight 0                      # Navigation priority. Bigger is higher.
       # parent OtherModel             # Set parent model for navigation. MyModel will be nested below. OtherModel will be on first position of the dropdown
-      # navigation_label              # Sets dropdown entry's name in navigation. Only for parents!
+      # navigation_label            # Sets dropdown entry's name in navigation. Only for parents!
 
     # Section specific configuration:
 
