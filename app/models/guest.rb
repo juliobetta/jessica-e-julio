@@ -5,8 +5,8 @@ class Guest < ActiveRecord::Base
 
   validates_presence_of   :code, :name, :status
   validates_uniqueness_of :email, :code
-  validates_inclusion_of  :status, :in => self::STATUS
-  validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
+  validates_inclusion_of  :status, in: self::STATUS
+  validates_format_of :email, with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, allow_blank: true
 
   attr_accessible :code, :confirmed_aggregates, :email, :name, :possible_aggregates, :status
 
@@ -19,7 +19,7 @@ class Guest < ActiveRecord::Base
   end
 
   def status_enum
-    [['SIM', :confirmed], ['Não-confirmado', :not_confirmed], ['NÃO', :unconfirmed]]
+    [['SIM', :confirmed], ['Não-confirmado', :not_confirmed], ['NÃ<O></O>', :unconfirmed]]
   end
 
   def status
