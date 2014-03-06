@@ -87,10 +87,11 @@ RailsAdmin.config do |config|
 
       list do
         field :name
+        field :code
         field :email
+        field :status, :enum
         field :possible_aggregates
         field :confirmed_aggregates
-        field :status, :enum
         field :created_at
         field :updated_at
         # filters [:id, :name]  # Array of field names which filters should be shown by default in the table header
