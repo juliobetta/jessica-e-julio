@@ -1,0 +1,16 @@
+$basefont:14;
+$baseh1:30;
+
+// ===================================================//
+//                                                    //
+//                EM calculator                       //
+//                                                    //
+// example:                                           //
+//  h1 {                                              //
+//    font-size:em($baseh1);                          //
+//  }                                                 //
+// ===================================================//
+
+@function em($target, $context: $basefont) {
+  @return ($target / $context) * 1em;
+}

@@ -1,0 +1,16 @@
+@import '_functions';
+
+#cover {
+  min-height: 160px;
+  margin-bottom: 40px;
+  background-color: #ccc;
+  .push { min-height: 160px;}
+  .title {
+    font-family: 'Great Vibes', cursive;
+    font-size: em(80);
+    padding-left: 5px;
+    padding-bottom: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+  }
+}
