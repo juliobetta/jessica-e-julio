@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 ruby '2.0.0'
 gem 'rails', '3.2.15'
 
-gem 'iconv', :platform => :mri_20
+gem 'iconv', platform: :mri_20
 
 
 # Bundle edge Rails instead:
@@ -15,7 +15,7 @@ gem 'iconv', :platform => :mri_20
 # in production environments by default.
 
 group :assets do
-  gem 'sass-rails', :git => 'https://github.com/rails/sass-rails.git', :branch => '3-2-stable'
+  gem 'sass-rails', git: 'https://github.com/rails/sass-rails.git', branch: '3-2-stable'
   gem 'bootstrap-sass','~> 2.2.0'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
@@ -23,7 +23,7 @@ group :assets do
   gem 'asset_sync', '~> 1.0.0'
 end
 
-gem 'twitter-bootstrap-rails', '~> 2.2.0'
+gem 'twitter-bootstrap-rails', git: 'https://github.com/seyhunak/twitter-bootstrap-rails.git', branch: 'bootstrap3'
 gem 'jquery-rails'
 
 gem 'rails-i18n'
