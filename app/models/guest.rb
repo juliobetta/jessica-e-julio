@@ -4,9 +4,10 @@ class Guest < ActiveRecord::Base
   STATUS = [:confirmed, :not_confirmed, :unconfirmed]
 
   validates_presence_of   :code, :name, :status
-  validates_uniqueness_of :email, :code
+  validates_uniqueness_of :code
   validates_inclusion_of  :status, in: self::STATUS
   validates_format_of :email, with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, allow_blank: true
+  validates_uniqueness_of :email, allow_blank: true
 
   attr_accessible :code, :confirmed_aggregates, :email, :name, :possible_aggregates, :status
 
