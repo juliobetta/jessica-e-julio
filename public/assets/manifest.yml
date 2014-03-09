@@ -1,8 +1,10 @@
 ---
-application.js: application-d54d00a6c2c4c0b12e5af49847d368fa.js
-application/index.js: application-d54d00a6c2c4c0b12e5af49847d368fa.js
-application.css: application-1af4ae209eec1d689c5db0fd103a520d.css
-application/index.css: application-1af4ae209eec1d689c5db0fd103a520d.css
+cover_.jpg: cover_-f38a90af143f579fb7919ba1d29e8779.jpg
+cover_/index.jpg: cover_-f38a90af143f579fb7919ba1d29e8779.jpg
+application.js: application-65cdbdb77141730ddf5f01df2e92fc45.js
+application/index.js: application-65cdbdb77141730ddf5f01df2e92fc45.js
+application.css: application-cdcc8671a7e49ac8f8cd71668dae7f1f.css
+application/index.css: application-cdcc8671a7e49ac8f8cd71668dae7f1f.css
 rails_admin/aristo/images/bg_fallback.png: rails_admin/aristo/images/bg_fallback-6f9cb8477029d43d00adaa46dd7cf940.png
 rails_admin/aristo/images/bg_fallback/index.png: rails_admin/aristo/images/bg_fallback-6f9cb8477029d43d00adaa46dd7cf940.png
 rails_admin/aristo/images/icon_sprite.png: rails_admin/aristo/images/icon_sprite-0e02a0dbc3fa128644d7c5b6e6217014.png
@@ -89,8 +91,8 @@ rails_admin/multiselect/ui-icon-circle-triangle-s-light.png: rails_admin/multise
 rails_admin/multiselect/ui-icon-circle-triangle-s-light/index.png: rails_admin/multiselect/ui-icon-circle-triangle-s-light-cf09df3fa57c3496f191d108dded0561.png
 rails_admin/jquery.colorpicker.js: rails_admin/jquery.colorpicker-201a905b06cff3f87b18f3f8961812b7.js
 rails_admin/jquery/index.colorpicker.js: rails_admin/jquery.colorpicker-201a905b06cff3f87b18f3f8961812b7.js
-rails_admin/rails_admin.js: rails_admin/rails_admin-36c34f2fadf553fee956e9dbaa2d223a.js
-rails_admin/rails_admin/index.js: rails_admin/rails_admin-36c34f2fadf553fee956e9dbaa2d223a.js
+rails_admin/rails_admin.js: rails_admin/rails_admin-ab76ce35f2b96d2053deabf67f750e85.js
+rails_admin/rails_admin/index.js: rails_admin/rails_admin-ab76ce35f2b96d2053deabf67f750e85.js
 rails_admin/base/README.txt: rails_admin/base/README-a926caeed07918a356b1702cf5e6c07b.txt
 rails_admin/base/README/index.txt: rails_admin/base/README-a926caeed07918a356b1702cf5e6c07b.txt
 rails_admin/jquery.colorpicker.css: rails_admin/jquery.colorpicker-eef545ae4cc8f2492a5bff4a4a234aa7.css
@@ -137,6 +139,14 @@ fontawesome-webfont.woff: fontawesome-webfont-6cfa562c51325bb1df40b64732dc8699.w
 fontawesome-webfont/index.woff: fontawesome-webfont-6cfa562c51325bb1df40b64732dc8699.woff
 jquery.min.map: jquery.min-388372ef65cc311f6a3df4a6ceac8d22.map
 jquery/index.min.map: jquery.min-388372ef65cc311f6a3df4a6ceac8d22.map
+glyphicons-halflings-regular.eot: glyphicons-halflings-regular-e76f5a754ccf64843a118a8706df3f8c.eot
+glyphicons-halflings-regular/index.eot: glyphicons-halflings-regular-e76f5a754ccf64843a118a8706df3f8c.eot
+glyphicons-halflings-regular.svg: glyphicons-halflings-regular-8a0a941aafb8c48e709ca72675344c92.svg
+glyphicons-halflings-regular/index.svg: glyphicons-halflings-regular-8a0a941aafb8c48e709ca72675344c92.svg
+glyphicons-halflings-regular.ttf: glyphicons-halflings-regular-b5577a3f3fb089369af33ce56e196d02.ttf
+glyphicons-halflings-regular/index.ttf: glyphicons-halflings-regular-b5577a3f3fb089369af33ce56e196d02.ttf
+glyphicons-halflings-regular.woff: glyphicons-halflings-regular-0391150c52d1f65893d1d6b0d29fd0c9.woff
+glyphicons-halflings-regular/index.woff: glyphicons-halflings-regular-0391150c52d1f65893d1d6b0d29fd0c9.woff
 twitter/bootstrap/glyphicons-halflings-white.png: twitter/bootstrap/glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png
 twitter/bootstrap/glyphicons-halflings-white/index.png: twitter/bootstrap/glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png
 twitter/bootstrap/glyphicons-halflings.png: twitter/bootstrap/glyphicons-halflings-2851b489e8c39f8fad44fc10efb99c3e.png
