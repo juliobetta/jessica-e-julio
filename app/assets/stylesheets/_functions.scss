@@ -1,0 +1,15 @@
+@import '_variables';
+
+// ===================================================//
+//                                                    //
+//                EM calculator                       //
+//                                                    //
+// example:                                           //
+//  h1 {                                              //
+//    font-size:em($baseh1);                          //
+//  }                                                 //
+// ===================================================//
+
+@function em($target, $context: $basefont) {
+  @return ($target / $context) * 1em;
+}

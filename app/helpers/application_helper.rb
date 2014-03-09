@@ -8,7 +8,7 @@ module ApplicationHelper
       when :success
         "alert-success"
       else
-        type.to_s
+        "alert-warning"
     end
   end
 end

@@ -1,0 +1,17 @@
+@import '_variables';
+@import '_functions';
+
+body {
+}
+
+#main-container {
+  section {
+    margin-bottom: 80px;
+    text-align: center;
+    h4 {
+      font-family: $handwrite;
+      font-size: em(55);
+      color: $pink;
+    }
+  }
+}

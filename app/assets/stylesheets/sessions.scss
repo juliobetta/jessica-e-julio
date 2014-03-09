@@ -1,0 +1,20 @@
+$default_border_radius: 4px;
+
+#new_user {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: $default_border_radius;
+  box-shadow: 1px 1px 2px #ccc;
+  border: 1px solid #ccc;
+  .form-inputs {
+    padding: 10px;
+  }
+  .form-actions {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-bottom-right-radius: $default_border_radius;
+    border-bottom-left-radius: $default_border_radius;
+    p { margin: 0; }
+  }
+}
