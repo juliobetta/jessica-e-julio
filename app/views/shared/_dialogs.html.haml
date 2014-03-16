@@ -1,0 +1,9 @@
+= modal_dialog id: "confirmation", |
+  header: { show_close: true, dismiss: 'modal', title: content_tag(:span, '  ', :class => 'glyphicon glyphicon-ok') + '  Confirmar Presença' }, |
+  body: 'Em breve...', |
+  footer: content_tag(:button, 'Confirmar', :class => 'btn btn-success', 'data-dismiss' => 'modal')
+
+= modal_dialog id: "gifts", |
+  header: { show_close: true, dismiss: 'modal', title: content_tag(:span, '  ', :class => 'glyphicon glyphicon-gift') + '  Lista de Presentes' }, |
+  body: 'Em breve...', |
+  footer: content_tag(:button, 'Fechar', :class => 'btn btn-default', 'data-dismiss' => 'modal') |

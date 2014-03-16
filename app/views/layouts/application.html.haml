@@ -12,13 +12,14 @@
     = stylesheet_link_tag "application"
     = csrf_meta_tags
 
-  %body{'data-spy' => 'scroll', 'data-target' => '#navbar-links', 'data-offset' => 1}
+  %body{'data-spy' => 'scroll', 'data-target' => '#navbar-links', 'data-offset' => 5}
     %header#home
       = render partial: "shared/navbar"
       = render partial: "shared/cover"
 
     #main-container
       .container
+        = render partial: "shared/dialogs"
         = render partial: "shared/notification", locals: {flash: flash}
         = yield
 
