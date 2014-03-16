@@ -18,6 +18,10 @@
 
 %section#album
   %h4 Nosso Álbum
+  #gamma-container.gamma-container.gamma-loading
+    %ul.gamma-gallery
+      = render partial: 'photo', collection: @photos
+    .gamma-overlay
 
 
 %section#gifts
