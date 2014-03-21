@@ -81,10 +81,7 @@ pickle-email-*.html
 # Environment files that may contain sensitive data
 .env
 .powenv
+application.yml
 
 # custom
-asset_sync.rb
-setup_mail.rb
-database.yml
-aws.yml
 public/assets/

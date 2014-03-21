@@ -5,12 +5,6 @@ gem 'rails', '3.2.15'
 
 gem 'iconv', platform: :mri_20
 
-
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
-
-
 # Gems used only for assets and not required
 # in production environments by default.
 
@@ -37,6 +31,7 @@ gem 'paperclip', '4.1.1'
 gem 'fog'
 gem 'aws-sdk'
 gem 'squeel'
+gem 'figaro'
 
 group :test do
   # Pretty printed test output
