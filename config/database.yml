@@ -1,0 +1,36 @@
+# MySQL.  Versions 4.1 and 5.0 are recommended.
+#
+# Install the MySQL driver:
+#   gem install mysql2
+#
+# And be sure to use new-style password hashing:
+#   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+
+default_production: &default_production
+  <<: *default
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  #host:
+
+development:
+  <<: *default
+  database: jessicaejulio_development
+
+test:
+  <<: *default
+  database: jessicaejulio_test
+
+production:
+  <<: *default_production
+  database: jessicaejulio_production
+
+staging:
+  <<: *default_production
+  database: jessicaejulio_staging
