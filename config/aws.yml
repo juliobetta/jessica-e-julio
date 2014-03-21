@@ -1,8 +1,7 @@
-# config/aws.yml
 defaults: &defaults
   provider: 'AWS'
-  aws_access_key_id: ""
-  aws_secret_access_key: ""
+  aws_access_key_id: <%= ENV['AWS_KEY_ID'] %>
+  aws_secret_access_key: <%= ENV['AWS_ACCESS_KEY'] %>
   region: 'sa-east-1'
 development:
   <<: *defaults

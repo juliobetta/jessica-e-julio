@@ -1,9 +1,9 @@
 if defined?(AssetSync)
   AssetSync.configure do |config|
-    config.fog_provider = 'AWS'
-    config.aws_access_key_id = ''
-    config.aws_secret_access_key = ''
-    config.fog_directory = ''
+    config.fog_provider          = 'AWS'
+    config.aws_access_key_id     = ENV['AWS_KEY_ID']
+    config.aws_secret_access_key = ENV['AWS_ACCESS_KEY']
+    config.fog_directory         = 'jessicaejulio'
 
     # Increase upload performance by configuring your region
     config.fog_region = 'sa-east-1'
