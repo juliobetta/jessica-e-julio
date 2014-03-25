@@ -2,17 +2,17 @@
 @import '_functions';
 
 #cover {
-  min-height: 160px;
-  margin-bottom: 40px;
-  // background-color: #ccc;
-  background: url('cover_.jpg') 0 460px;
-  .push { min-height: 160px;}
-  .title {
-    font-family: $handwrite;
-    font-size: em(80);
-    padding-left: 5px;
-    padding-bottom: 20px;
-    color: white;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
-  }
+  min-height: 144px;
+  margin-bottom: 55px;
+
+
+  background-image: image-url('cover.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  .push { min-height: 610px;}
 }
