@@ -1,12 +1,26 @@
 @import '_variables';
 @import '_functions';
+@import '_mixins';
 
 #cover {
   min-height: 144px;
   margin-bottom: 55px;
 
+  @include respond-to(wide-screens) {
+    .push { min-height: 800px; }
+    background-image: image-url('cover.jpg');
+  }
 
-  background-image: image-url('cover.jpg');
+  @include respond-to(medium-screens) {
+    .push { min-height: 800px; }
+    background-image: image-url('cover_alt.jpg');
+  }
+
+  @include respond-to(handhelds) {
+    .push { min-height: 677px;}
+    background-image: image-url('cover_alt.jpg');
+  }
+
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -14,5 +28,4 @@
   -moz-background-size: cover;
   -o-background-size: cover;
 
-  .push { min-height: 610px;}
 }
