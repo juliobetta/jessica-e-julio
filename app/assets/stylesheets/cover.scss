@@ -3,29 +3,28 @@
 @import '_mixins';
 
 #cover {
-  min-height: 144px;
+  // min-height: 377px;
   margin-bottom: 55px;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-attachment: fixed;
+  -webkit-background-size: contain;
+  background-size: contain;
 
   @include respond-to(wide-screens) {
     .push { min-height: 800px; }
     background-image: image-url('cover.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
   }
 
   @include respond-to(medium-screens) {
-    .push { min-height: 800px; }
+    .push { height: 610px; }
     background-image: image-url('cover_alt.jpg');
   }
 
   @include respond-to(handhelds) {
-    .push { min-height: 377px; }
-    background-image: image-url('cover.jpg');
+    .push { height: 377px; }
+    background-image: image-url('cover_sm.jpg');
   }
-
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
 }
