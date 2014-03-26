@@ -17,8 +17,8 @@
   }
 
   @include respond-to(handhelds) {
-    .push { min-height: 677px;}
-    background-image: image-url('cover_alt.jpg');
+    .push { min-height: 377px; }
+    background-image: image-url('cover.jpg');
   }
 
   background-repeat: no-repeat;
