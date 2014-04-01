@@ -7,9 +7,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require gallery/modernizr.custom.70736
-//= require gallery/jquery.masonry.min
-//= require gallery/jquery.history
-//= require gallery/jquerypp.custom
-//= require gallery/gamma
+//= require vendor/gallery/modernizr.custom.70736
+//= require vendor/gallery/jquery.masonry.min
+//= require vendor/gallery/jquery.history
+//= require vendor/gallery/jquerypp.custom
+//= require vendor/gallery/gamma
+//= require vendor/gmaps
 //= require_tree .

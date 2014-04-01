@@ -15,6 +15,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'compass-rails', '~> 1.0.1'
   gem 'asset_sync', '~> 1.0.0'
+  gem 'unf'
 end
 
 gem 'twitter-bootstrap-rails', git: 'https://github.com/seyhunak/twitter-bootstrap-rails.git', branch: 'bootstrap3'
