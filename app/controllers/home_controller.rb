@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
   def index
     @photos    = Photo.all
+    @guest     = Guest.new(code: '')
 
     @days_left = begin
       now    = DateTime.now

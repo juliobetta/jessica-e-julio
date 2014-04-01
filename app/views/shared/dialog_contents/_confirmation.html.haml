@@ -1,3 +1,4 @@
-%p Montamos nossa lista de presentes em três sites:
-%ul
-  %li= link_to('http://carrinho.americanas.com.br/lista-de-casamento/pages/BridalRegistryHomePage/bridalRegistryId/01-02-6139497/', image_tag('americanas.png'), target: '_blank')
+= simple_form_for @guest do |f|
+  = f.input :code, label: 'Código presente em seu convite'
+  = f.input :confirmed_aggregates, label: 'Número de Acompanhantes'
+  = f.button :submit, class: 'hidden'

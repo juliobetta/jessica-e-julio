@@ -1,7 +1,7 @@
 = modal_dialog id: "confirmation", |
   header: { show_close: true, dismiss: 'modal', title: content_tag(:span, '  ', :class => 'glyphicon glyphicon-ok') + '  Confirmar Presença' }, |
-  body: 'Em breve...', |
-  footer: content_tag(:button, 'Confirmar', :class => 'btn btn-success', 'data-dismiss' => 'modal')
+  body: render(partial: 'shared/dialog_contents/confirmation'), |
+  footer: content_tag(:button, 'Confirmar', :class => 'btn btn-success')
 
 = modal_dialog id: "gifts", |
   header: { show_close: true, dismiss: 'modal', title: content_tag(:span, '  ', :class => 'glyphicon glyphicon-gift') + '  Lista de Presentes' }, |
