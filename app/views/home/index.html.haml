@@ -19,7 +19,8 @@
 
 %section#story
   %h4 Nossa História
-  %iframe{allowfullscreen: "", frameborder: "0", height: "365", mozallowfullscreen: "", src: "//player.vimeo.com/video/90476856?title=0&byline=0&portrait=0&color=ff9b83", webkitallowfullscreen: "", width: "650"}
+  .video-wrapper
+    %iframe{allowfullscreen: "", frameborder: "0", height: "365", mozallowfullscreen: "", src: "//player.vimeo.com/video/90476856?title=0&byline=0&portrait=0&color=ff9b83", webkitallowfullscreen: "", width: "650"}
 
 
 %section#album
@@ -31,4 +32,20 @@
 
 %section#locations
   %h4 Localizações
-  %p Em breve...
+  .col-md-3.content
+    %center
+      %h3 Porciúncula / RJ
+
+    %strong Celebração Religiosa
+    %div
+      %a{href:'#church'} Igreja Casa de Oração
+    %p Rua João Francisco Brás, 16 - Centro
+
+    %div
+      %strong Recepção
+    %div
+      %a{href:'#room'} Salão de Festas Miguel Nardes
+    %p Rua Cézar Vieira, 475 - Centro
+
+  .col-md-9
+    #map
