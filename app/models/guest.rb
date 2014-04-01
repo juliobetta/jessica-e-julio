@@ -14,13 +14,15 @@ class Guest < ActiveRecord::Base
   after_initialize :new_record_defaults
 
   def new_record_defaults
-    if self.new_record?
+    if self.new_record? and self.code.nil?
       self.code = SecureRandom.hex(3).to_s.upcase
+    else
+      self.code = self.code.upcase
     end
   end
 
   def status_enum
-    [['SIM', :confirmed], ['Não-confirmado', :not_confirmed], ['NÃ<O></O>', :unconfirmed]]
+    [['SIM', :confirmed], ['Não-confirmado', :not_confirmed], ['NÃO', :unconfirmed]]
   end
 
   def status
@@ -30,4 +32,14 @@ class Guest < ActiveRecord::Base
   def status= (valor)
     write_attribute(:status, valor.to_s)
   end
+
+  def confirmed?
+    self.status == :confirmed
+  end
+
+  def confirmed!
+    self.status = :confirmed
+    self.save
+  end
+
 end
