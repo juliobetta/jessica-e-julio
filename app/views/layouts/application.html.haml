@@ -20,7 +20,7 @@
 
     #main-container
       .container
-        = render partial: "shared/dialogs"
+        = render partial: "shared/dialogs" unless params[:controller] =~ /sessions/
         = render partial: "shared/notification", locals: {flash: flash}
         = yield
 
