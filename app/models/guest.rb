@@ -37,8 +37,16 @@ class Guest < ActiveRecord::Base
     self.status == :confirmed
   end
 
-  def confirmed!
-    self.status = :confirmed
+  def confirm!(params)
+    confirmed_aggregates = params[:confirmed_aggregates].to_i
+
+    # can't set confirmed aggregates greater than possible aggregates
+    if confirmed_aggregates > self.possible_aggregates
+      confirmed_aggregates = self.possible_aggregates
+    end
+
+    self.status               = :confirmed
+    self.confirmed_aggregates = confirmed_aggregates
     self.save
   end
 

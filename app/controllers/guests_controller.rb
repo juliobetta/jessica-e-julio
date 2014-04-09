@@ -5,7 +5,7 @@ class GuestsController < ApplicationController
 
     if guest.confirmed?
       message = 'Sua presença já foi confirmada. Nos encontramos no dia 12 de julho!'
-    elsif guest.confirmed!
+    elsif guest.confirm!(params[:guest])
       message = 'Agradecemos sua confirmação. Sua presença é muito importante para nós! Até lá!'
     else
       message = 'Ooops! Aconteceu algum probleminha... Por favor, ligue para (22) 3842-1585 para maiores esclarecimentos.'
