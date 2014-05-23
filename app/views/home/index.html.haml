@@ -25,10 +25,8 @@
 
 %section#album
   %h4 Nosso Álbum
-  #gamma-container.gamma-container.gamma-loading
-    %ul.gamma-gallery
-      = render partial: 'photo', collection: @photos
-    .gamma-overlay
+  #gallery.gamma-container.gamma-loading
+    = render partial: 'photo', collection: @photos
 
 %section#locations
   %h4 Localizações

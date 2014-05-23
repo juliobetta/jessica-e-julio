@@ -1,12 +1,3 @@
-%li
-  %div{'data-alt' => nil, 'data-description' => "<h3>#{photo.description}</h3>", 'data-max-width' => "1800", 'data-max-height' => "1350"}
-    %div{'data-src' => photo.data, 'data-min-width' => '1300'}
-    %div{'data-src' => photo.data, 'data-min-width' => '1000'}
-    %div{'data-src' => photo.data, 'data-min-width' => '700'}
-    %div{'data-src' => photo.data, 'data-min-width' => '300'}
-    %div{'data-src' => photo.data, 'data-min-width' => '200'}
-    %div{'data-src' => photo.data, 'data-min-width' => '140'}
-    %div{'data-src' => photo.data}
+.item
+  = link_to(image_tag(photo.data(:medium), width: 200), photo.data(:original))
 
-    %noscript
-      = image_tag photo.data(:medium)
