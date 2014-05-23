@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   def index
-    @photos    = Photo.all
-    @guest     = Guest.new(code: '')
+    @guest  = Guest.new(code: '')
+    @photos = Photo.all
 
     @days_left = begin
       now    = DateTime.now
@@ -9,6 +9,11 @@ class HomeController < ApplicationController
 
       (future.to_date - now.to_date).to_i
     end
+  end
 
+  def gallery
+    @photos = Photo.all
+
+    render partial: 'photo', collection: @photos
   end
 end
