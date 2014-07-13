@@ -10,7 +10,7 @@ class HomeController < ApplicationController
       (future.to_date - now.to_date).to_i
     end
 
-    @status_message = days_left == 0 ? 'É Hoje!!!' : ( days_left == 1 ? 'Falta 1 dia' : "Faltam #{days_left} dias")
+    @status_message = 'Estamos Casados!!!'
   end
 
   def gallery
