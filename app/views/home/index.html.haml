@@ -1,17 +1,10 @@
 %section#dialogs
-  %h4 Nós vamos casar!
-  %p No dia 12 de julho de 2014, às 19 horas, nos casaremos na Igreja Casa de Oração, em Porciúncula/RJ.
+  %h4 Estamos Casados!!!
+  %p No dia 12 de julho de 2014, às 19 horas, realizamos o maior sonho de nossas vidas.
   %p
-    Logo após a cerimônia, ofereceremos uma recepção aos convidados.
-    Clique
-    %a{href: '#locations'} aqui
-    para saber mais sobre as localizações.
+    Agrademos a todos por compartilhar conosco este momento tão especial.
   %p
     %br
-    %a#btn-confirmation.btn.btn-success{href: '#confirmation', 'data-toggle' => 'modal'}
-      %span.glyphicon.glyphicon-ok
-      %span.title Confirmar Presença
-
     %a#btn-gifts.btn.btn-default{href: '#gifts', 'data-toggle' => 'modal'}
       %span.glyphicon.glyphicon-gift
       %span.title Lista de Presentes
@@ -27,23 +20,3 @@
   %h4 Nosso Álbum
   #gallery.gamma-container.gamma-loading
     = render partial: 'photo', collection: @photos
-
-%section#locations
-  %h4 Localizações
-  .col-md-3.content
-    %center
-      %h3 Porciúncula / RJ
-
-    %strong Celebração Religiosa
-    %div
-      %a{href:'#church'} Igreja Casa de Oração
-    %p Rua João Francisco Brás, 16 - Centro
-
-    %div
-      %strong Recepção
-    %div
-      %a{href:'#room'} Salão de Festas Miguel Nardes
-    %p Rua Cézar Vieira, 475 - Centro
-
-  .col-md-9
-    #map
